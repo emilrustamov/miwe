@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hackaton/screens/agronom.dart';
+import 'package:hackaton/core/colors.dart';
+import 'package:hackaton/screens/agronomTasks.dart';
+import 'package:hackaton/screens/dashboard.dart';
+import 'package:hackaton/screens/taskCreate.dart';
 import 'package:hackaton/widgets/primaryBtn.dart';
 import 'package:hackaton/core/assets.dart';
 import 'package:hackaton/screens/onePlant.dart';
@@ -20,14 +23,15 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      backgroundColor: CoreColors.white,
+      appBar: AppBar(
+        backgroundColor: CoreColors.white,
+      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 30),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            // SvgPicture.asset("assets/miwe.svg"),
-
             Column(
               children: [
                 Padding(
@@ -73,7 +77,7 @@ class _LoginScreenState extends State<LoginScreen> {
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => AgronomScreen(),
+                    builder: (context) => DashboardScreen(),
                   ),
                 );
               },

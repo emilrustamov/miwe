@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hackaton/screens/login.dart';
-import 'package:hackaton/screen/dashboard.dart';
 
 void main() {
   runApp(const MyApp());
